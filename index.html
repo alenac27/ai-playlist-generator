@@ -5,38 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Playlist generator</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&family=Montserrat:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>AI Playlist generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the music genre"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>Playlist will be here</div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>AI Playlist generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a music genre here"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="playlist">Playlist will be here</div>
+      </main>
 
-    <footer>
-      Coded with ❤️ by Alena Causov and is
-      <a
-        href="https://github.com/alenac27/ai-playlist-generator"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://ai-playlist-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+      <footer>
+        Coded with ❤️ by Alena Causov and is
+        <a
+          href="https://github.com/alenac27/ai-playlist-generator"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://ai-playlist-generator.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
