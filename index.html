@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Playlist generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,17 +19,18 @@
         <h1>AI Playlist generator</h1>
       </header>
       <main>
-        <form>
+        <form id="playlist-generator-form">
           <input
             type="text"
             placeholder="Enter a music genre here"
             autofocus
             required
             autocomplete="off"
+            class="instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="playlist">Playlist will be here</div>
+        <div class="playlist" id="playlist"></div>
       </main>
 
       <footer>
