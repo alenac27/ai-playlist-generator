@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Montserrat", sans-serif;
+  color: #271f1e;
 }
 
 .container {
@@ -15,7 +16,6 @@ body {
 h1 {
   font-family: "Chonburi", serif;
   font-size: 64px;
-  color: #271f1e;
   padding: 20px;
   margin: 10px;
 }
@@ -25,7 +25,7 @@ form {
   background-color: white;
   border-radius: 10px;
   margin: 20px;
-  border: 2px solid #fc0088;
+  border: 1px solid #fc0088;
 }
 
 input {
@@ -61,12 +61,15 @@ input {
   margin: 20px;
   line-height: 2;
   border-radius: 10px;
-  border: 2px solid #fc0088;
+  border: 1px solid #fc0088;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
 .playlist ul {
   list-style-type: none;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0px;
 }
 
 .playlist li {
@@ -83,4 +86,19 @@ footer {
   font-size: 14px;
   color: white;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .playlist li,
+  footer {
+    font-size: 12px;
+  }
+
+  input {
+    width: 180px;
+  }
 }
