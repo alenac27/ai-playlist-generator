@@ -20,12 +20,20 @@ h1 {
   margin: 10px;
 }
 
-form {
-  padding: 30px;
+.form-wrapper {
+  padding: 15px 20px;
   background-color: white;
   border-radius: 10px;
-  margin: 20px;
   border: 1px solid #fc0088;
+  margin: 20px;
+}
+
+.user-instructions {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 10px;
+  font-weight: 600;
+  padding-bottom: 20px;
 }
 
 input {
@@ -34,7 +42,11 @@ input {
   border: 1px solid #271f1e;
   font-size: 16px;
   width: 250px;
-  margin: 10px;
+  margin: 20px;
+}
+
+input:focus-visible {
+  outline: #fc0088 auto 1px;
 }
 
 .submit-button {
@@ -85,7 +97,10 @@ footer {
   padding: 20px;
   font-size: 14px;
   color: white;
-  font-weight: bold;
+}
+
+footer a {
+  color: #93fef9;
 }
 
 @media (max-width: 600px) {

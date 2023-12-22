@@ -10,28 +10,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Chonburi&family=Montserrat:wght@200;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chonburi&family=Montserrat:wght@200;400;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Playlist generator 🎵</h1>
+        <h1>🎵 Playlist generator 🎵</h1>
       </header>
       <main>
-        <form id="playlist-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a music genre here"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-wrapper">
+          <span class="user-instructions">
+            Enter any music genre , e.g. pop music, rock or techno and our AI
+            generator will create a playlist for you!
+          </span>
+          <form id="playlist-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a music genre here"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" value="Send" />
+          </form>
+        </div>
         <div class="playlist hidden" id="playlist"></div>
       </main>
 
